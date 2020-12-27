@@ -10,9 +10,10 @@ class UserTransformerClass implements UserTransformInterface
 {
     private $user;
 
-    public function setUser(UserDTOClass $user)
+    public function setUser(UserDTOClass $user):UserTransformInterface
     {
         $this->user = $user;
+        return $this;
     }
 
     public function transform(): ?array
