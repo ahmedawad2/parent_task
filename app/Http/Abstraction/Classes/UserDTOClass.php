@@ -4,11 +4,14 @@
 namespace App\Http\Abstraction\Classes;
 
 
-use App\Http\Controllers\API\Helpers;
 use Carbon\Carbon;
 
 abstract class UserDTOClass
 {
+    const STATUS_AUTHORISED = 'authorised';
+    const STATUS_DECLINED = 'decline';
+    const STATUS_REFUNDED = 'refunded';
+    const STATUS_UNKNOWN = 'unknown';
     const TO_DATE_FORMAT = 'Y/m/d';
 
     protected $amount;
@@ -33,13 +36,13 @@ abstract class UserDTOClass
     {
         switch ($this->statusCode) {
             case static::$statusAuthorised:
-                return Helpers::STATUS_AUTHORISED;
+                return self::STATUS_AUTHORISED;
             case static::$statusDeclined:
-                return Helpers::STATUS_DECLINED;
+                return self::STATUS_DECLINED;
             case static::$statusRefunded:
-                return Helpers::STATUS_REFUNDED;
+                return self::STATUS_REFUNDED;
             default:
-                return Helpers::STATUS_UNKNOWN;
+                return self::STATUS_UNKNOWN;
         }
     }
 
