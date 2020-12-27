@@ -12,7 +12,7 @@ return [
 
         'DataProviderY' => [
             'class' => \App\Http\Abstraction\Classes\UserYClass::class,
-            'file_name' => 'DataProviderX',
+            'file_name' => 'DataProviderY',
             'entry_key' => 'users',
         ],
 
