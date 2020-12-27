@@ -32,7 +32,6 @@ class UsersRepository implements UsersRepositoryInterface
             $this->depth = $this->reader->depth();
             $this->reader->read();
         } catch (Exception $e) {
-            dd($e->getMessage());
             $this->reader = false;
         }
     }
