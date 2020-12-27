@@ -45,9 +45,14 @@ abstract class UserDTOClass
 
     protected function convertCreatedAt(): string
     {
-        return static::$fromDateFormat ?
-            Carbon::createFromFormat(static::$fromDateFormat, $this->createdAt)->format(self::TO_DATE_FORMAT)
-            : $this->createdAt;
+        if (static::$fromDateFormat) {
+            try {
+                return Carbon::createFromFormat(static::$fromDateFormat, $this->createdAt)->format(self::TO_DATE_FORMAT);
+            } catch (\Exception $e) {
+
+            }
+        }
+        return $this->createdAt;
     }
 
     protected function getFromData($key)
