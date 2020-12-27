@@ -39,7 +39,7 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->bind(ValidatingUserInterface::class, function (){
             return new ValidatingUserClass(
-                UsersDTOFactory::create(array_keys(config('data_providers'))[0], [])
+                UsersDTOFactory::create(array_keys(config('data_providers.providers'))[0], [])
             );
         });
     }
