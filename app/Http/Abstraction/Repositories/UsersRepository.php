@@ -46,8 +46,9 @@ class UsersRepository implements UsersRepositoryInterface
     {
         if ($this->provider) {
             try {
-                $this->reader->open(env('PROVIDERS_PATH', 'jsons/') . $this->provider . '.json');
-                $this->reader->read("users");
+                $this->reader->open(env('PROVIDERS_PATH', 'jsons/')
+                    . config('data_providers.providers.' . $this->provider . '.file_name') . '.json');
+                $this->reader->read(config('data_providers.providers.' . $this->provider . '.entry_key'));
                 $this->depth = $this->reader->depth();
                 $this->reader->read();
             } catch (Exception $e) {

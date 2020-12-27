@@ -9,7 +9,6 @@ PHP 7.3 or higher with the Ctype and Intl extensions.
 <li>copy .env.example to .env.</li>
 <li>place data files in an accessible path in the project and update the env variable PROVIDERS_PATH accordingly.</li>
 <li>register your providers in config/data_providers file.</li>
-<li>(note): app assumes file name = PROVIDER_NAME.json, e.g: a provider called DataProviderX shall have a corresponding json file named DataProviderX.json in the specified path.</li>
 </ul>
 
 ## Note
