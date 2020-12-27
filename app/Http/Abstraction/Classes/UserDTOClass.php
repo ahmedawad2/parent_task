@@ -46,7 +46,7 @@ abstract class UserDTOClass
         }
     }
 
-    protected function convertCreatedAt(): string
+    protected function convertCreatedAt(): ?string
     {
         if (static::$fromDateFormat) {
             try {
