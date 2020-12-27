@@ -28,9 +28,7 @@ class UsersRepository implements UsersRepositoryInterface
 
     private function setAllProviders()
     {
-        if (config('data_providers')) {
-            $this->allProviders = array_keys(config('data_providers'));
-        }
+        $this->allProviders = array_keys(config('data_providers.providers'));
     }
 
     private function setProvider(string $provider = null)
@@ -41,8 +39,7 @@ class UsersRepository implements UsersRepositoryInterface
 
     private function validProvider(string $provider = null): bool
     {
-        return config('data_providers') ?
-            in_array($provider, array_keys(config('data_providers'))) : false;
+        return in_array($provider, array_keys(config('data_providers.providers')));
     }
 
     private function prepareReader()
@@ -64,7 +61,7 @@ class UsersRepository implements UsersRepositoryInterface
         return $this->allProviders ? array_shift($this->allProviders) : null;
     }
 
-    public function hasNext(): bool
+    public function next(): bool
     {
         if ($this->reader) {
             try {

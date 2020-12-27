@@ -4,7 +4,6 @@
 namespace App\Http\Abstraction\Classes;
 
 
-use App\Http\Abstraction\Interfaces\UserDTOInterface;
 use App\Http\Abstraction\Interfaces\ValidatingUserInterface;
 
 class ValidatingUserClass implements ValidatingUserInterface
@@ -14,9 +13,7 @@ class ValidatingUserClass implements ValidatingUserInterface
 
     public function __construct(UserDTOClass $userDTO)
     {
-        if ($userDTO) {
-            $this->setUser($userDTO);
-        }
+        $this->setUser($userDTO);
     }
 
     public function setUser(UserDTOClass $userDTO): ValidatingUserInterface

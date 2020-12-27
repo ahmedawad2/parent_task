@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f3159412-e446-4e18-9c3e-3125dbe0af45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Abstraction/Classes/UserDTOClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Abstraction/Classes/UserDTOClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Abstraction/Classes/UserTransformerClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Abstraction/Classes/UserTransformerClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Abstraction/Classes/ValidatingUserClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Abstraction/Classes/ValidatingUserClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Abstraction/Factories/UsersDTOFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Abstraction/Factories/UsersDTOFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Abstraction/Interfaces/UserTransformInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Abstraction/Interfaces/UserTransformInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Abstraction/Interfaces/UsersRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Abstraction/Interfaces/UsersRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Abstraction/Repositories/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Abstraction/Repositories/UsersRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/Helpers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/V1/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/V1/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/data_providers.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/data_providers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +197,7 @@
       <workItem from="1608987941269" duration="15490000" />
       <workItem from="1608998508440" duration="5038000" />
       <workItem from="1609082640242" duration="761000" />
-      <workItem from="1609076313824" duration="3225000" />
+      <workItem from="1609076313824" duration="7803000" />
     </task>
     <servers />
   </component>

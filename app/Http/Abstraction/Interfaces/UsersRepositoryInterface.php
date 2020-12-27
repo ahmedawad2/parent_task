@@ -9,5 +9,5 @@ interface UsersRepositoryInterface
 {
     public function currentObject(): ?UserDTOClass;
 
-    public function hasNext(): bool;
+    public function next(): bool;
 }
