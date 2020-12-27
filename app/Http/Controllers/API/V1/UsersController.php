@@ -27,7 +27,6 @@ class UsersController
                     ->setUser($user)
                     ->transform();
             }
-
             $usersRepository->next();
         }
 

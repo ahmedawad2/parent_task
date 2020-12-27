@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\Abstraction\Classes\ProvidersClass;
 use App\Http\Abstraction\Classes\UserTransformerClass;
 use App\Http\Abstraction\Classes\ValidatingUserClass;
 use App\Http\Abstraction\Factories\UsersDTOFactory;
@@ -32,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->bind(UsersRepositoryInterface::class, function () {
-            return new UsersRepository(new JsonReader(), request()->get('provider'));
+            return new UsersRepository(new JsonReader(), new ProvidersClass(request()->get('provider')));
         });
         $this->app->bind(UserTransformInterface::class, function () {
             return new UserTransformerClass();
