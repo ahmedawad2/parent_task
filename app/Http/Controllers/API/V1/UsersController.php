@@ -15,20 +15,21 @@ class UsersController
                           UserTransformInterface $userTransform, ValidatingUserInterface $validatingUser)
     {
         $data = [];
-        do {
-            $user = $usersRepository->currentObject();
-//            dump($user);
-            if ($user) {
-                $validatingUser->setUser($user);
-                $validatingUser->applyStatus($request->get('statusCode'))
-                    ->applyCurrency($request->get('currency'))
-                    ->applyAmount($request->get('balanceMin'), $request->get('balanceMax'));
-                if ($validatingUser->isValid()) {
-                    $userTransform->setUser($user);
-                    $data[] = $userTransform->transform();
-                }
+        while ($user = $usersRepository->currentObject()) {
+            $validatingUser
+                ->setUser($user)
+                ->applyStatus($request->get('statusCode'))
+                ->applyCurrency($request->get('currency'))
+                ->applyAmount($request->get('balanceMin'), $request->get('balanceMax'));
+
+            if ($validatingUser->isValid()) {
+                $data[] = $userTransform
+                    ->setUser($user)
+                    ->transform();
             }
-        } while ($usersRepository->hasNext());
+
+            $usersRepository->next();
+        }
 
         return $data ? response()->json($data, 200)
             : response()->json(null, 204);
