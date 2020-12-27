@@ -1,7 +1,9 @@
 ##Requirements
+
 PHP 7.3 or higher with the Ctype and Intl extensions.
 
 ##Installation
+
 <ul>
 <li>clone the project.</li>
 <li>copy .env.example to .env.</li>
@@ -11,6 +13,7 @@ PHP 7.3 or higher with the Ctype and Intl extensions.
 </ul>
 
 ##Note
+
 <p>Task was made using Laravel 8.20.1.</p>
 <p>i used this: <a href="https://github.com/pcrov/JsonReader">Package</a> to manipulate large json files.</p>
 <p>Task covered those evaluation aspects only (unfortunately !) <ul>
