@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3159412-e446-4e18-9c3e-3125dbe0af45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Abstraction/Repositories/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Abstraction/Repositories/UsersRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +146,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -186,7 +187,7 @@
       <workItem from="1608987941269" duration="15490000" />
       <workItem from="1608998508440" duration="5038000" />
       <workItem from="1609082640242" duration="761000" />
-      <workItem from="1609076313824" duration="586000" />
+      <workItem from="1609076313824" duration="3225000" />
     </task>
     <servers />
   </component>
